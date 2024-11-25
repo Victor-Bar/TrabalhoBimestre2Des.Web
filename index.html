@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Click por Segundo</title>
+    <!-- Inclusão do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos */
+        .game-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .tempo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .resultado {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="bg-dark text-white py-3 text-center">
+    <div class="container">
+        <h1>Teste de Click por Segundo</h1>
+    </div>
+</header>
+
+<main>
+    <section class="container game-container">
+        <h2>Quanto tempo você consegue clicar?</h2>
+        <p>Click no botão abaixo o máximo de vezes que conseguir!</p>
+
+        <!-- Botão de iniciar o jogo -->
+        <button id="inicia" class="btn btn-success btn-lg">Iniciar Teste</button>
+
+        <!-- Tempo do teste -->
+        <div class="tempo mt-3">
+            Tempo restante: <span id="tempo">10</span> segundos
+        </div>
+
+        <!-- Contador de cliques -->
+        <div class="mt-4">
+            <button id="contador" class="btn btn-primary btn-lg" disabled>Click me!</button>
+        </div>
+
+        <!-- Resultado do jogo -->
+        <div id="resultado" class="resultado"></div>
+
+        <!-- Botão de reiniciar -->
+        <button id="botaoreset" class="btn btn-warning btn-lg mt-3" style="display: none;">Reiniciar</button>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
